@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {View,Text,SafeAreaView,Button,TextInput,Alert,FlatList,ScrollView,StyleSheet,TouchableOpacity} from 'react-native';
-import {Entypo} from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 export default  function App(){
   const [name,setName] =useState('');
@@ -60,7 +60,7 @@ export default  function App(){
 
               <View>
               <TouchableOpacity style={{}} onPress={()=> deleteEntry(item)}>
-                  <Entypo name="circle-with-cross" size={20} color="black"/>
+                  <Ionicons name="trash-bin" size={20} color="red" />
               </TouchableOpacity>
               </View>
 
